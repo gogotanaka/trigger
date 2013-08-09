@@ -1,3 +1,251 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#welcome_demo {
+  background-image: url(pattern5.png);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  
+  #image {
+    position:absolute;
+    left: 50%;
+    margin-left: -70px;
+    top: 50%;
+    margin-top: -200px;
+    
+    img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50px;
+      box-shadow: 0 0 3px #333333;
+    }
+    #form {
+      margin-left: -80px;
+      margin-top: 12px;
+      
+      #pass {
+        margin-top: 10px;
+      }
+    }
+    .text_input {
+      border: 1px solid #CCCCCC;
+      box-shadow: 0 1px 0 #EEEEEE inset, 0 1px 0 #FFFFFF;
+      padding: 0 5px;
+      
+      &:focus {
+        border: 1px solid #56B4EF;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05) inset, 0 0 8px rgba(82, 168, 236, 0.6);
+      }
+    }
+    
+    .mail_form {
+          width: 250px;
+            height: 30px;
+        }
+        .pass_form {
+          width: 170px;
+            height: 30px;
+        }
+      .login_button {
+        background-color: rgb(52,169,235);
+        background: linear-gradient(rgb(52,169,235), rgb(45,118,209));
+          background: -moz-linear-gradient(top, rgb(52,169,235), rgb(45,118,209));
+          background: -webkit-gradient(linear, center top, center bottom, from(rgb(52,169,235)), to(rgb(45,118,209)));
+          border: 1px solid #057ED0;
+          color: #FFFFFF;
+          text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+          cursor: pointer;
+          border-radius: 2px;
+          padding: 8px 11px;
+          height: 31px;
+          margin-left: 8px;
+          font-weight: bold;
+          font-size: 11px;
+        
+          &:hover, &:focus {
+            background-color: rgb(67,184,250);
+            background: linear-gradient(rgb(67,184,250), rgb(60,133,224));
+            background: -moz-linear-gradient(top, rgb(67,184,250), rgb(60,133,224));
+            background: -webkit-gradient(linear, center top, center bottom, from(rgb(67,184,250)), to(rgb(60,133,224)));
+            border-color: 1px solid #096EB3;
+            color: #FFFFFF;
+          }
+      }
+  }
+}
+
+#welcome_header_container {
+  background-color: #000;
+  color: #fff;
+  height: 60px;
+  
+  #header {
+    width: 1000px;
+    margin: auto;
+    
+    #logo {
+      float: left;
+      font-size: 30px;
+      margin-top: 12px;
+      
+      a {
+        color: #fff;
+        text-decoration: none;
+        &:hover {
+          color: #fff;
+          text-decoration: none;
+        }
+      }
+    }
+    ul {
+      float: right;
+      margin: 6px 10px 0 0;
+      
+      li {
+        margin: 3px 0;
+      }
+      .text_input {
+        border: 1px solid #CCCCCC;
+          
+          padding: 0 5px;
+          
+          &:focus {
+            border: 1px solid #56B4EF;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05) inset, 0 0 8px rgba(82, 168, 236, 0.6);
+          }
+      }
+      
+      .login_form {
+        width: 200px;
+          height: 24px;
+      }
+      .login_button {
+        background-color: rgb(52,169,235);
+        background: linear-gradient(rgb(52,169,235), rgb(45,118,209));
+          background: -moz-linear-gradient(top, rgb(52,169,235), rgb(45,118,209));
+          background: -webkit-gradient(linear, center top, center bottom, from(rgb(52,169,235)), to(rgb(45,118,209)));
+          border: 1px solid #057ED0;
+          color: #FFFFFF;
+          text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+          cursor: pointer;
+          border-radius: 2px;
+          padding: 6px 10px;
+          height: 27px;
+          margin-left: 8px;
+          font-weight: bold;
+          font-size: 11px;
+        
+          &:hover, &:focus {
+            background-color: rgb(67,184,250);
+            background: linear-gradient(rgb(67,184,250), rgb(60,133,224));
+            background: -moz-linear-gradient(top, rgb(67,184,250), rgb(60,133,224));
+            background: -webkit-gradient(linear, center top, center bottom, from(rgb(67,184,250)), to(rgb(60,133,224)));
+            border-color: 1px solid #096EB3;
+            color: #FFFFFF;
+          }
+      }
+      .option {
+        font-size: 11px;
+        
+        a {
+          color: #fff;
+        
+          &:hover {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+#welcome_footer {
+  font-weight: bold;
+  padding: 30px 0;
+  
+  width: 1000px;
+  margin: auto;
+  
+  p {
+    float: right;
+    color: #999999;
+  }
+}
+#welcome_bg_wrap {
+
+  background-image: url(pattern5.png);
+  border-bottom: 1px solid #ccc;
+  height: 100%;
+  #content {
+    width: 1000px;
+    margin: auto;
+    padding: 40px 0;
+    
+    #left {
+      width: 1000px;
+      float: left;
+      
+      #vision {
+        font-size: 27px;
+        font-weight: bold;
+        text-shadow: 0 1px 1px rgba(255,255,255,0.7);
+      }
+      .social_button_wrap {
+        margin: 30px 0;
+        
+        .welcome_socialbotton_twitter {
+          width: 100px;
+          float: left;
+          margin-left: 86px;
+        }
+        .welcome_socialbotton_fb  {
+          width: 300px;
+          float: left;
+          margin-left: 20px;
+        }
+      }
+    }
+    #front {
+      width: 1000px;
+      margin-top: 40px;
+      .person {
+        
+        float: left;
+        width: 312px;
+        margin: 9px;
+        .thing {
+          width: 100px;
+          height: 100px;
+          margin: 2px;
+          padding: 5px 10px 0 10px;
+          float: left;
+          border: 1px dashed #999999;
+          div.image {
+            width: 100px;
+            height: 70px;
+            img {
+              border-radius: 12%;
+            }
+          }
+          p.name {
+            color: white;
+            font-size: 13px;
+            line-height: 18px;
+          }
+          p.title {
+            color: #000;
+            font-size: 13px;      
+          }
+        }
+      }
+
+    }
+
+  } 
+}
+
+

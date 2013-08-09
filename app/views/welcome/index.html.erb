@@ -1,2 +1,49 @@
-あああ
+<header class="clearfix">
+  <div id="welcome_header_container">
+  <div id="header">
+    <div id="logo">
+      <%= link_to "Triger", "/welcome/index", :class => "serif" %>
+    </div>
+    <ul>
+
+    </ul>
+  </div>  
+</div>
+</header>
+
+
+<div id="welcome_bg_wrap">
+  <div id="content" class="clearfix">
+    <div id="left">
+      <div id="vision" class="serif">
+        「好き」をきっかけにつながろう。
+      </div>
+
+    </div>
+
+    <div id="front">
+      <% ["田中和希","山田邦子","中田達也"].each do |name| %>
+
+        <div class="person">
+          <% Thing.all.each.with_index do |thing,i| %>
+            <% if i ==4 %>
+              <div class="thing">
+                <p class="title"><%= name %>さんの「好き」</p>
+              </div>
+            <% else %>
+              <div class="thing">
+                <div class="image"><%= image_tag(thing.image_url(:thumb).to_s, width: "80px") if thing.image? %></div>
+                <p class="name"><%= thing.name %></p>
+              </div>
+            <% end %>
+          <% end %>
+        </div>
+      <% end %>
+
+
+
+    </div>
+  </div>
+
+</div>
 
